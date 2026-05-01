@@ -43,7 +43,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll(
-    '.about-left, .about-right, .skill-block, .project-featured, .project-card, .contact-inner'
+    '.about-left, .about-right, .skill-block, .project-featured, .project-card, .contact-inner, .edu-card, .resume-cta-box'
 ).forEach((el, i) => {
     el.classList.add('reveal');
     if (i % 3 === 1) el.classList.add('reveal-delay-1');
