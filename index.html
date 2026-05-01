@@ -4,200 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arfa Phansopkar — Computer Science Engineer</title>
-    <meta name="description" content="Portfolio of Arfa Phansopkar — Computer Science Engineer specializing in AI, ML, and Data Science.">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio of Arfa Phansopkar — Computer Science Engineer specializing in AI, ML & Data Science.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
     <!-- Loader -->
     <div class="loader" id="loader">
-        <div class="loader-inner">
-            <div class="loader-name">Arfa</div>
-            <div class="loader-bar"><div class="loader-fill"></div></div>
-        </div>
+        <div class="loader-text"><span>A</span><span>R</span><span>F</span><span>A</span></div>
+        <div class="loader-line"></div>
     </div>
 
-    <!-- Cursor -->
-    <div class="cursor" id="cursor"></div>
-
-    <!-- Navigation -->
+    <!-- Nav -->
     <nav class="nav" id="nav">
-        <div class="nav-brand">
-            <span class="brand-first">A</span><span class="brand-last">P</span>
+        <div class="nav-logo">AP</div>
+        <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Work</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" id="navToggle" aria-label="Menu">
-            <span></span><span></span>
-        </button>
+        <div class="nav-menu" id="nav-menu"><span></span><span></span><span></span></div>
     </nav>
 
-    <!-- Mobile Nav -->
-    <div class="mobile-nav" id="mobileNav">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Work</a>
-        <a href="#contact">Contact</a>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
     </div>
 
     <!-- ═══ HERO ═══ -->
-    <section class="hero" id="home">
-        <div class="hero-layout">
-            <div class="hero-text">
-                <p class="hero-eyebrow">Computer Science Engineer</p>
-                <h1 class="hero-heading">
-                    <span class="h-line">Hello,</span>
-                    <span class="h-line h-italic">I'm Arfa</span>
-                    <span class="h-line">Phansopkar</span>
+    <section class="hero" id="hero">
+        <div class="hero-bg"><div class="hero-grid"></div><div class="hero-glow"></div></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <p class="hero-tag reveal-text">Computer Science Engineer</p>
+                <h1 class="hero-name reveal-text">
+                    <span class="hero-name-first">Arfa</span>
+                    <span class="hero-name-last">Phansopkar</span>
                 </h1>
-                <p class="hero-desc">
-                    Computer Science Engineer specializing in AI, Machine Learning & Data Science — building intelligent systems that turn raw data into meaningful impact.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-dark">View Projects</a>
-                    <a href="https://github.com/phansopkar-arfa" target="_blank" class="btn btn-outline">GitHub ↗</a>
-                    <a href="resume.pdf" download class="btn btn-outline">Download CV ↓</a>
+                <p class="hero-subtitle reveal-text">Building intelligent systems — from LLM-powered web apps to predictive ML pipelines — that turn raw data into meaningful impact.</p>
+                <div class="hero-ctas reveal-text">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="https://github.com/phansopkar-arfa" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+                    <a href="resume.pdf" download class="btn btn-ghost">Resume ↓</a>
+                </div>
+                <div class="hero-stats reveal-text">
+                    <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Study</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Technologies</span></div>
                 </div>
             </div>
-
-            <div class="hero-photo-wrap">
-                <div class="photo-container">
-                    <img src="photo.jpg" alt="Arfa Phansopkar - Computer Science Engineer" class="hero-img">
-                    <div class="photo-deco-line photo-deco-v"></div>
-                    <div class="photo-deco-line photo-deco-h"></div>
-                    <div class="photo-tag">
-                        <span>CSE</span>
-                        <span>&</span>
-                        <span>AI</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-sidebar">
-                <div class="sidebar-stat">
-                    <div class="stat-big">4+</div>
-                    <div class="stat-label">Projects<br>Delivered</div>
-                </div>
-                <div class="sidebar-divider"></div>
-                <div class="sidebar-stat">
-                    <div class="stat-big">10+</div>
-                    <div class="stat-label">Technologies<br>Mastered</div>
-                </div>
-                <div class="sidebar-divider"></div>
-                <div class="sidebar-links">
-                    <a href="https://linkedin.com/in/arfa-p-bb8988216" target="_blank" class="sidebar-link">in</a>
-                    <a href="https://github.com/phansopkar-arfa" target="_blank" class="sidebar-link">gh</a>
-                    <a href="mailto:phansopkararfa@gmail.com" class="sidebar-link">@</a>
-                </div>
-                <div class="sidebar-available">
-                    <span class="avail-dot"></span>
-                    Available for Opportunities
+            <div class="hero-right">
+                <div class="photo-frame">
+                    <div class="photo-border"></div>
+                    <img src="photo.jpg" alt="Arfa Phansopkar" class="hero-photo">
+                    <div class="photo-badge"><span>CSE</span><span>Engineer</span></div>
                 </div>
             </div>
         </div>
-
-        <div class="hero-ticker">
-            <div class="ticker-track">
-                <span>Python</span><span>·</span><span>Django</span><span>·</span>
-                <span>Machine Learning</span><span>·</span><span>NLP</span><span>·</span>
-                <span>Data Science</span><span>·</span><span>LLM Integration</span><span>·</span>
-                <span>Streamlit</span><span>·</span><span>Groq API</span><span>·</span>
-                <span>Python</span><span>·</span><span>Django</span><span>·</span>
-                <span>Machine Learning</span><span>·</span><span>NLP</span><span>·</span>
-                <span>Data Science</span><span>·</span><span>LLM Integration</span><span>·</span>
-            </div>
-        </div>
+        <div class="scroll-indicator"><span>Scroll</span><div class="scroll-line"></div></div>
     </section>
 
     <!-- ═══ ABOUT ═══ -->
-    <section class="about section" id="about">
+    <section class="about" id="about">
         <div class="container">
+            <div class="section-header"><span class="section-num">01</span><h2 class="section-title">About Me</h2></div>
             <div class="about-grid">
-                <div class="about-left">
-                    <div class="section-label">01 — About Me</div>
-                    <h2 class="section-heading">Turning Data into<br><em>Intelligent Decisions</em></h2>
-                    <div class="about-photo-small">
-                        <img src="photo.jpg" alt="Arfa Phansopkar">
+                <div class="about-text">
+                    <p class="about-lead">I'm a <em>Computer Science Engineer</em> pursuing B.E. in CSE (AI & ML) with Honours in Data Science from Mumbai University.</p>
+                    <p>My journey began at Government Polytechnic Ratnagiri with a Diploma in Computer Engineering. Now at Finolex Academy of Management and Technology, I specialize in building end-to-end AI solutions — from predictive ML pipelines to full-stack web apps.</p>
+                    <p>My flagship project, the <strong>AI Career Companion</strong>, integrates Groq LLM for real-time mock interviews, ATS resume scoring, and career coaching — all built and deployed by me.</p>
+                    <div class="about-links">
+                        <a href="https://linkedin.com/in/arfa-p-bb8988216" target="_blank" class="about-link">LinkedIn ↗</a>
+                        <a href="https://github.com/phansopkar-arfa" target="_blank" class="about-link">GitHub ↗</a>
+                        <a href="mailto:phansopkararfa@gmail.com" class="about-link">Email ↗</a>
                     </div>
                 </div>
-                <div class="about-right">
-                    <p class="about-lead">I'm a Computer Science Engineer pursuing B.E. in CSE (AI & ML) with Honours in Data Science from Mumbai University.</p>
-                    <p>My journey in technology began at Government Polytechnic Ratnagiri where I completed my Diploma in Computer Engineering. This strong foundation led me to Finolex Academy of Management and Technology where I'm now specializing in Artificial Intelligence and Machine Learning.</p>
-                    <p>I specialize in creating end-to-end solutions — from predictive ML pipelines and NLP-powered recruitment tools to full-stack AI web applications. My flagship project, the <strong>AI Career Companion</strong>, is a Django platform integrating Groq LLM for real-time mock interviews, ATS resume scoring, and career coaching — all built and deployed by me.</p>
-                    <div class="about-highlights">
-                        <div class="highlight">
-                            <div class="h-icon">🎓</div>
-                            <div>
-                                <strong>B.E. CSE (AI & ML) — Honours in Data Science</strong>
-                                <span>Finolex Academy · Mumbai University</span>
-                            </div>
-                        </div>
-                        <div class="highlight">
-                            <div class="h-icon">📍</div>
-                            <div>
-                                <strong>Maharashtra, India</strong>
-                                <span>Open to Remote & On-site</span>
-                            </div>
-                        </div>
-                        <div class="highlight">
-                            <div class="h-icon">💼</div>
-                            <div>
-                                <strong>Seeking Opportunities</strong>
-                                <span>AI / Data Science / Software Engineering</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-cta">
-                        <a href="mailto:phansopkararfa@gmail.com" class="btn btn-dark">Get In Touch</a>
-                        <a href="resume.pdf" download class="btn btn-outline">Download Resume ↓</a>
-                    </div>
+                <div class="about-cards">
+                    <div class="about-card"><div class="card-icon">🤖</div><h3>AI & ML</h3><p>Building predictive models, LLM integrations, and intelligent pipelines</p></div>
+                    <div class="about-card"><div class="card-icon">📊</div><h3>Data Science</h3><p>EDA, Feature Engineering, and dashboards that tell stories</p></div>
+                    <div class="about-card"><div class="card-icon">🌐</div><h3>Full Stack</h3><p>Django, REST APIs, and polished frontend experiences</p></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ═══ EDUCATION ═══ -->
-    <section class="education section" id="education">
+    <section class="education" id="education">
         <div class="container">
-            <div class="section-label">02 — Education</div>
-            <h2 class="section-heading">Academic <em>Background</em></h2>
+            <div class="section-header"><span class="section-num">02</span><h2 class="section-title">Education</h2></div>
             <div class="edu-timeline">
                 <div class="edu-card">
-                    <div class="edu-period">2023 — Present</div>
-                    <div class="edu-content">
-                        <div class="edu-badge">Current</div>
-                        <h3 class="edu-degree">B.E. Computer Science & Engineering (AI & ML)</h3>
+                    <div class="edu-year">2023 — Present</div>
+                    <div class="edu-info">
+                        <span class="edu-badge">Current</span>
+                        <h3>B.E. Computer Science & Engineering (AI & ML)</h3>
                         <p class="edu-sub">with Honours in Data Science</p>
                         <p class="edu-school">Finolex Academy of Management and Technology</p>
                         <p class="edu-uni">Mumbai University</p>
-                        <div class="edu-highlights">
-                            <span>Artificial Intelligence</span>
-                            <span>Machine Learning</span>
-                            <span>Data Science</span>
-                            <span>NLP</span>
-                            <span>Deep Learning</span>
-                        </div>
+                        <div class="edu-tags"><span>AI</span><span>Machine Learning</span><span>Data Science</span><span>NLP</span><span>Deep Learning</span></div>
                     </div>
                 </div>
                 <div class="edu-card">
-                    <div class="edu-period">2020 — 2023</div>
-                    <div class="edu-content">
-                        <div class="edu-badge completed">Completed</div>
-                        <h3 class="edu-degree">Diploma in Computer Engineering</h3>
+                    <div class="edu-year">2020 — 2023</div>
+                    <div class="edu-info">
+                        <span class="edu-badge completed">Completed</span>
+                        <h3>Diploma in Computer Engineering</h3>
                         <p class="edu-school">Government Polytechnic Ratnagiri</p>
-                        <div class="edu-highlights">
-                            <span>Computer Engineering</span>
-                            <span>Programming</span>
-                            <span>Database Management</span>
-                            <span>Networking</span>
-                        </div>
+                        <div class="edu-tags"><span>Computer Engineering</span><span>Programming</span><span>Database Management</span></div>
                     </div>
                 </div>
             </div>
@@ -205,123 +130,93 @@
     </section>
 
     <!-- ═══ SKILLS ═══ -->
-    <section class="skills section" id="skills">
-        <div class="skills-inner">
-            <div class="container">
-                <div class="section-label center">03 — Skills</div>
-                <h2 class="section-heading center">What I Work With</h2>
-                <div class="skills-grid">
-                    <div class="skill-block">
-                        <div class="skill-block-icon">⌨️</div>
-                        <h3>Languages</h3>
-                        <ul><li>Python</li><li>JavaScript</li><li>SQL</li><li>HTML / CSS</li></ul>
-                    </div>
-                    <div class="skill-block">
-                        <div class="skill-block-icon">🤖</div>
-                        <h3>AI & ML</h3>
-                        <ul><li>Scikit-Learn</li><li>TensorFlow</li><li>NLP & NLTK</li><li>LLM / Groq API</li><li>SARIMAX & Prophet</li></ul>
-                    </div>
-                    <div class="skill-block">
-                        <div class="skill-block-icon">📊</div>
-                        <h3>Data Science</h3>
-                        <ul><li>Pandas & NumPy</li><li>Matplotlib & Seaborn</li><li>Streamlit</li><li>Power BI</li></ul>
-                    </div>
-                    <div class="skill-block">
-                        <div class="skill-block-icon">🌐</div>
-                        <h3>Web & DevOps</h3>
-                        <ul><li>Django</li><li>REST APIs</li><li>Git & GitHub</li><li>Render (Cloud Deploy)</li></ul>
-                    </div>
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header"><span class="section-num">03</span><h2 class="section-title">Skills</h2></div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Languages</h3>
+                    <div class="skill-tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">HTML/CSS</span></div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">AI & Machine Learning</h3>
+                    <div class="skill-tags"><span class="tag">Scikit-Learn</span><span class="tag">TensorFlow</span><span class="tag">NLP / NLTK</span><span class="tag">LLM Integration</span><span class="tag">Groq API</span><span class="tag">SARIMAX / Prophet</span></div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Data Science</h3>
+                    <div class="skill-tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Power BI</span><span class="tag">Streamlit</span></div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Web Development</h3>
+                    <div class="skill-tags"><span class="tag">Django</span><span class="tag">REST API</span><span class="tag">SQLite</span><span class="tag">PostgreSQL</span><span class="tag">Git & GitHub</span><span class="tag">Render</span></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ═══ PROJECTS ═══ -->
-    <section class="projects section" id="projects">
+    <section class="projects" id="projects">
         <div class="container">
-            <div class="section-label">04 — Work</div>
-            <h2 class="section-heading">Selected Projects</h2>
-
-            <div class="project-featured">
-                <div class="pf-number">01</div>
-                <div class="pf-content">
-                    <div class="pf-label">Featured · Full Stack AI Platform</div>
-                    <h3 class="pf-title">AI Career Companion</h3>
-                    <p class="pf-desc">A comprehensive Django-based platform that uses Groq LLM API for real-time AI mock interviews with face and tab-switch proctoring, automated ATS resume scoring with AI suggestions, and a personalized career coaching chatbot. Fully deployed on Render.</p>
-                    <div class="pf-stack">
-                        <span>Django</span><span>Groq API</span><span>NLP</span><span>JavaScript</span><span>SQLite</span><span>Render</span>
+            <div class="section-header"><span class="section-num">04</span><h2 class="section-title">Projects</h2></div>
+            <div class="projects-list">
+                <div class="project-card featured">
+                    <div class="project-meta"><span class="project-num">01</span><span class="project-tag">Featured · Full Stack AI</span></div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Career Companion</h3>
+                        <p class="project-desc">A comprehensive Django platform using Groq LLM API for real-time AI mock interviews with proctoring (face + tab detection), automated ATS resume scoring, and career coaching chatbot.</p>
+                        <div class="project-tech"><span>Django</span><span>Groq API</span><span>NLP</span><span>JavaScript</span><span>SQLite</span></div>
                     </div>
-                    <a href="https://github.com/phansopkar-arfa/AI-CAREER-COMPANION" target="_blank" class="btn btn-dark">View on GitHub ↗</a>
-                </div>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="pc-number">02</div>
-                    <div class="pc-tag">NLP · Recruitment AI</div>
-                    <h3 class="pc-title">AI Resume Screening & Ranking</h3>
-                    <p class="pc-desc">Automated NLP tool using TF-IDF and Cosine Similarity to rank resumes against job descriptions, with a Streamlit recruiter dashboard.</p>
-                    <div class="pc-stack"><span>Python</span><span>Scikit-Learn</span><span>NLTK</span><span>Streamlit</span></div>
-                    <a href="https://github.com/phansopkar-arfa/ai-resume-screening-nlp" target="_blank" class="pc-link">GitHub ↗</a>
+                    <div class="project-links"><a href="https://github.com/phansopkar-arfa/AI-CAREER-COMPANION" target="_blank" class="project-link">GitHub ↗</a></div>
                 </div>
                 <div class="project-card">
-                    <div class="pc-number">03</div>
-                    <div class="pc-tag">Time Series · Analytics</div>
-                    <h3 class="pc-title">Sales Forecasting & Demand Prediction</h3>
-                    <p class="pc-desc">SARIMAX and Prophet-based forecasting model for sales demand with EDA and an interactive Streamlit dashboard with Power BI export.</p>
-                    <div class="pc-stack"><span>Python</span><span>SARIMAX</span><span>Prophet</span><span>Power BI</span></div>
-                    <a href="https://github.com/phansopkar-arfa/sales-forecasting-demand-prediction" target="_blank" class="pc-link">GitHub ↗</a>
+                    <div class="project-meta"><span class="project-num">02</span><span class="project-tag">NLP · Recruitment AI</span></div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Resume Screening & Ranking</h3>
+                        <p class="project-desc">Automated recruitment tool using TF-IDF and Cosine Similarity to rank resumes against job descriptions, with a Streamlit recruiter dashboard.</p>
+                        <div class="project-tech"><span>Python</span><span>NLP</span><span>Scikit-Learn</span><span>Streamlit</span><span>NLTK</span></div>
+                    </div>
+                    <div class="project-links"><a href="https://github.com/phansopkar-arfa/ai-resume-screening-nlp" target="_blank" class="project-link">GitHub ↗</a></div>
                 </div>
                 <div class="project-card">
-                    <div class="pc-number">04</div>
-                    <div class="pc-tag">Machine Learning · Analytics</div>
-                    <h3 class="pc-title">Telecom Customer Churn Prediction</h3>
-                    <p class="pc-desc">End-to-end ML pipeline comparing Logistic Regression and Random Forest to predict customer churn with interactive analytics dashboards.</p>
-                    <div class="pc-stack"><span>Python</span><span>Random Forest</span><span>EDA</span><span>Streamlit</span></div>
-                    <a href="https://github.com/phansopkar-arfa/customer-churn-prediction" target="_blank" class="pc-link">GitHub ↗</a>
+                    <div class="project-meta"><span class="project-num">03</span><span class="project-tag">Time Series · Analytics</span></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sales Forecasting & Demand Prediction</h3>
+                        <p class="project-desc">Time-series forecasting with SARIMAX and Prophet, EDA, and interactive Streamlit dashboard with Power BI export.</p>
+                        <div class="project-tech"><span>Python</span><span>SARIMAX</span><span>Prophet</span><span>Streamlit</span><span>Power BI</span></div>
+                    </div>
+                    <div class="project-links"><a href="https://github.com/phansopkar-arfa/sales-forecasting-demand-prediction" target="_blank" class="project-link">GitHub ↗</a></div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══ RESUME ═══ -->
-    <section class="resume-section section" id="resume">
-        <div class="container">
-            <div class="resume-cta-box">
-                <div class="section-label center">05 — Resume</div>
-                <h2 class="section-heading center">Download My <em>Resume</em></h2>
-                <p class="resume-sub">Get a detailed overview of my skills, experience, education, and projects in a single page.</p>
-                <a href="resume.pdf" download class="btn btn-dark btn-lg">Download Resume (PDF) ↓</a>
+                <div class="project-card">
+                    <div class="project-meta"><span class="project-num">04</span><span class="project-tag">Machine Learning</span></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Telecom Customer Churn Prediction</h3>
+                        <p class="project-desc">End-to-end ML pipeline comparing Logistic Regression and Random Forest to predict churn, with interactive analytics dashboards.</p>
+                        <div class="project-tech"><span>Python</span><span>Scikit-Learn</span><span>Random Forest</span><span>EDA</span><span>Streamlit</span></div>
+                    </div>
+                    <div class="project-links"><a href="https://github.com/phansopkar-arfa/customer-churn-prediction" target="_blank" class="project-link">GitHub ↗</a></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ═══ CONTACT ═══ -->
-    <section class="contact section" id="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="contact-inner">
-                <div class="section-label center">06 — Contact</div>
-                <h2 class="section-heading center">Let's Build Something<br><em>Together</em></h2>
-                <p class="contact-sub">Open to internship opportunities, full-time roles, and collaborative projects in AI, Data Science, or Software Engineering.</p>
+            <div class="section-header"><span class="section-num">05</span><h2 class="section-title">Let's Connect</h2></div>
+            <div class="contact-content">
+                <p class="contact-lead">Open to opportunities in <em>AI Engineering</em>, <em>Data Science</em>, and <em>Software Engineering</em>.</p>
                 <a href="mailto:phansopkararfa@gmail.com" class="contact-email">phansopkararfa@gmail.com</a>
                 <div class="contact-socials">
-                    <a href="https://linkedin.com/in/arfa-p-bb8988216" target="_blank" class="social-pill">LinkedIn</a>
-                    <a href="https://github.com/phansopkar-arfa" target="_blank" class="social-pill">GitHub</a>
-                    <a href="mailto:phansopkararfa@gmail.com" class="social-pill">Email</a>
+                    <a href="https://linkedin.com/in/arfa-p-bb8988216" target="_blank" class="social-btn">LinkedIn</a>
+                    <a href="https://github.com/phansopkar-arfa" target="_blank" class="social-btn">GitHub</a>
+                    <a href="mailto:phansopkararfa@gmail.com" class="social-btn">Email</a>
+                    <a href="resume.pdf" download class="social-btn">Resume ↓</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-inner">
-                <span class="footer-name">Arfa Phansopkar</span>
-                <span class="footer-copy">© 2026 · Computer Science Engineer</span>
-                <a href="#home" class="footer-top">Back to Top ↑</a>
-            </div>
-        </div>
-    </footer>
+    <footer class="footer"><p>© 2026 Arfa Phansopkar · Computer Science Engineer</p></footer>
 
     <script src="script.js"></script>
 </body>
