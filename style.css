@@ -307,12 +307,23 @@ section { padding: 8rem 0; }
 
 /* ── ABOUT ───────────────────────── */
 .about { background: var(--bg-alt); }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-.about-lead { font-family: var(--serif); font-size: 1.5rem; line-height: 1.5; color: var(--ink-soft); margin-bottom: 1.5rem; }
+.about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 4rem; align-items: start; }
+.about-lead {
+    font-family: var(--serif); font-size: 1.4rem;
+    line-height: 1.6; color: var(--ink-soft); margin-bottom: 1.5rem;
+}
 .about-lead em { color: var(--accent); font-style: italic; }
-.about-text p { color: var(--muted); margin-bottom: 1rem; font-size: 0.95rem; }
+.about-text p {
+    color: var(--muted); margin-bottom: 1.2rem;
+    font-size: 0.95rem; line-height: 1.8;
+    text-align: justify;
+}
 .about-text strong { color: var(--ink); font-weight: 500; }
-.about-links { display: flex; gap: 2rem; margin-top: 2.5rem; }
+.about-links {
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+    margin-top: 2rem; padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
 .about-link {
     font-family: var(--mono); font-size: 0.75rem;
     letter-spacing: 0.1em; text-transform: uppercase;
@@ -321,15 +332,15 @@ section { padding: 8rem 0; }
     padding-bottom: 2px; transition: all 0.3s;
 }
 .about-link:hover { border-color: var(--accent); }
-.about-cards { display: flex; flex-direction: column; gap: 1.5rem; }
+.about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-content: start; }
 .about-card {
     background: var(--card); border: 1px solid var(--border);
-    padding: 2rem; border-radius: 4px; transition: all 0.3s;
+    padding: 1.5rem; border-radius: 4px; transition: all 0.3s;
 }
-.about-card:hover { border-color: rgba(201,123,132,0.3); transform: translateX(8px); }
-.card-icon { font-size: 1.5rem; margin-bottom: 0.8rem; }
-.about-card h3 { font-family: var(--serif); font-size: 1.1rem; color: var(--ink); margin-bottom: 0.5rem; }
-.about-card p { font-size: 0.85rem; color: var(--muted); }
+.about-card:hover { border-color: rgba(201,123,132,0.3); transform: translateY(-4px); }
+.card-icon { font-size: 1.4rem; margin-bottom: 0.6rem; }
+.about-card h3 { font-family: var(--serif); font-size: 1rem; color: var(--ink); margin-bottom: 0.4rem; }
+.about-card p { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
 
 /* ── EDUCATION ────────────────────── */
 .education { background: var(--bg); }
@@ -453,6 +464,8 @@ section { padding: 8rem 0; }
     .hero-ctas { justify-content: center; }
     .hero-stats { justify-content: center; }
     .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .about-cards { grid-template-columns: 1fr 1fr; }
+    .about-text p { text-align: left; }
     .skills-grid { grid-template-columns: 1fr; }
     .project-card { grid-template-columns: 1fr; }
     .project-meta { flex-direction: row; align-items: center; }
